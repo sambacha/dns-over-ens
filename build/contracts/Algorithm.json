@@ -1,0 +1,410 @@
+{
+  "contractName": "Algorithm",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "key",
+          "type": "bytes"
+        },
+        {
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "name": "sig",
+          "type": "bytes"
+        }
+      ],
+      "name": "verify",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "/*\nBSD 2-Clause License\n\nCopyright (c) 2017, Nick Johnson\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n*/\n\npragma solidity ^0.5.2;\n\ninterface Algorithm {\n    /**\n    * @dev Verifies a signature.\n    * @param key The signers pub key\n    * @param data The data that's is signed.\n    * @param sig The signature.\n    * @return True iff the signature is valid.\n    */\n    function verify(bytes calldata key, bytes calldata data, bytes calldata sig) external view returns (bool);\n}\n",
+  "sourcePath": "sig-verify-algs/contracts/Algorithm.sol",
+  "ast": {
+    "absolutePath": "sig-verify-algs/contracts/Algorithm.sol",
+    "exportedSymbols": {
+      "Algorithm": [
+        2061
+      ]
+    },
+    "id": 2062,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2049,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "1324:23:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2061,
+        "linearizedBaseContracts": [
+          2061
+        ],
+        "name": "Algorithm",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev Verifies a signature.\n@param key The signers pub key\n@param data The data that's is signed.\n@param sig The signature.\n@return True iff the signature is valid.",
+            "id": 2060,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "verify",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2056,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2051,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2060,
+                  "src": "1600:18:7",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2050,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1600:5:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2053,
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2060,
+                  "src": "1620:19:7",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2052,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1620:5:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2055,
+                  "name": "sig",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2060,
+                  "src": "1641:18:7",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2054,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1641:5:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1599:61:7"
+            },
+            "returnParameters": {
+              "id": 2059,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2058,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2060,
+                  "src": "1684:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2057,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1684:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1683:6:7"
+            },
+            "scope": 2061,
+            "src": "1584:106:7",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2062,
+        "src": "1349:343:7"
+      }
+    ],
+    "src": "1324:369:7"
+  },
+  "legacyAST": {
+    "absolutePath": "sig-verify-algs/contracts/Algorithm.sol",
+    "exportedSymbols": {
+      "Algorithm": [
+        2061
+      ]
+    },
+    "id": 2062,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2049,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "1324:23:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 2061,
+        "linearizedBaseContracts": [
+          2061
+        ],
+        "name": "Algorithm",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": "@dev Verifies a signature.\n@param key The signers pub key\n@param data The data that's is signed.\n@param sig The signature.\n@return True iff the signature is valid.",
+            "id": 2060,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "verify",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2056,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2051,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2060,
+                  "src": "1600:18:7",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2050,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1600:5:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2053,
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2060,
+                  "src": "1620:19:7",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2052,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1620:5:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2055,
+                  "name": "sig",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2060,
+                  "src": "1641:18:7",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 2054,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1641:5:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1599:61:7"
+            },
+            "returnParameters": {
+              "id": 2059,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2058,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2060,
+                  "src": "1684:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 2057,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1684:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1683:6:7"
+            },
+            "scope": 2061,
+            "src": "1584:106:7",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2062,
+        "src": "1349:343:7"
+      }
+    ],
+    "src": "1324:369:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.6",
+  "updatedAt": "2019-04-21T23:43:46.525Z",
+  "devdoc": {
+    "methods": {
+      "verify(bytes,bytes,bytes)": {
+        "details": "Verifies a signature.",
+        "params": {
+          "data": "The data that's is signed.",
+          "key": "The signers pub key",
+          "sig": "The signature."
+        },
+        "return": "True iff the signature is valid."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

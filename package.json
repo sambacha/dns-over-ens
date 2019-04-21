@@ -1,0 +1,35 @@
+{
+  "name": "dns-on-ens",
+  "version": "1.0.0",
+  "description": "Register your DNS domains under this ENS subdomain using X509 certificates.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonahGroendal/dns-on-ens.git"
+  },
+  "keywords": [
+    "DNS",
+    "ENS",
+    "Ethereum",
+    "domain",
+    "name",
+    "X509",
+    "Certificates"
+  ],
+  "author": "Jonah Groendal",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/JonahGroendal/dns-on-ens/issues"
+  },
+  "homepage": "https://github.com/JonahGroendal/dns-on-ens#readme",
+  "dependencies": {
+    "@ensdomains/ens": "github:ensdomains/ens",
+    "x509-forest-of-trust": "github:JonahGroendal/x509-forest-of-trust"
+  }
+}
