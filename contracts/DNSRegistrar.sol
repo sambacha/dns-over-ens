@@ -5,7 +5,7 @@ import "@ensdomains/ens/contracts/ENS.sol";
 import "x509-forest-of-trust/contracts/X509ForestOfTrust.sol";
 
 /**
- * @title A registrar that allocates subdomains to its DNS owner.
+ * @title A registrar that allocates subdomains to their DNS owners.
  * @author Jonah Groendal
  */
 contract DNSRegistrar is IDNSRegistrar{
