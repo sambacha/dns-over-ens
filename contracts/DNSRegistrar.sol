@@ -5,7 +5,8 @@ import "@ensdomains/ens/contracts/ENS.sol";
 import "x509-forest-of-trust/contracts/X509ForestOfTrust.sol";
 
 /**
- * A registrar that allocates subdomains to its DNS owner.
+ * @title A registrar that allocates subdomains to its DNS owner.
+ * @author Jonah Groendal
  */
 contract DNSRegistrar is IDNSRegistrar{
     ENS ens;
@@ -38,10 +39,9 @@ contract DNSRegistrar is IDNSRegistrar{
     }
 
     /**
-     * @dev Register a web2 domain that you own, or change the owner of an
-     *      existing registration.
-     * @param tld The hash of the top-level domain of the domain to register.
-     * @param domain The hash of the second-level domain of the domain to register.
+     * @dev Register a web2 domain that you have proven ownership of in X509ForestOfTrust.
+     * @param tld The hash of the top-level label of the domain (e.g. "org").
+     * @param domain The hash of the second-level label of the domain (e.g. "wikipedia")
      * @param owner The address of the new owner.
      */
     function register(bytes32 tld, bytes32 domain, address owner) external only_cert_owner(tld, domain) {
@@ -52,8 +52,7 @@ contract DNSRegistrar is IDNSRegistrar{
     }
 
     /**
-     * @dev Gets the owner of the most recently added valid cert that's signed
-     *      by a trusted and valid root cert.
+     * @return The address of the X509ForestOfTrust contract
      */
     function x509ForestOfTrustAddr() external view returns (address) {
       return address(x509);
@@ -61,7 +60,7 @@ contract DNSRegistrar is IDNSRegistrar{
 
     /**
      * @dev Gets the owner of the most recently added valid cert that's signed
-     *      by a trusted and valid root or intermediate cert.
+     * @dev by a trusted and valid root or intermediate cert.
      * @param node The namehash of a DNS domain name
      */
     function certOwner(bytes32 node) internal view returns (address) {
