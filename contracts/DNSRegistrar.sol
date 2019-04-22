@@ -17,7 +17,9 @@ contract DNSRegistrar is IDNSRegistrar{
     mapping(bytes32 => bool) isTrustedCert;
 
     modifier only_cert_owner(bytes32 tld, bytes32 domain) {
-        require(certOwner(keccak256(abi.encodePacked(tld, domain))) == msg.sender);
+        // namehash of domain.tld
+        bytes32 node = keccak256(abi.encodePacked(keccak256(abi.encodePacked(bytes32(0), tld)), domain));
+        require(certOwner(node) == msg.sender);
         _;
     }
     modifier only_admin() {

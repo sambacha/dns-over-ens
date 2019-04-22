@@ -31,5 +31,8 @@
   "dependencies": {
     "@ensdomains/ens": "github:ensdomains/ens",
     "x509-forest-of-trust": "github:JonahGroendal/x509-forest-of-trust"
+  },
+  "devDependencies": {
+    "eth-ens-namehash": "^2.0.8"
   }
 }
