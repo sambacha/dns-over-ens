@@ -8,7 +8,7 @@ import "x509-forest-of-trust/contracts/X509ForestOfTrust.sol";
  * @title A registrar that allocates subdomains to their DNS owners.
  * @author Jonah Groendal
  */
-contract DNSRegistrar is IDNSRegistrar{
+contract DNSRegistrar is IDNSRegistrar {
     ENS ens;
     bytes32 rootNode;
     address admin;
