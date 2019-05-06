@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/JonahGroendal/dns-on-ens#readme",
   "dependencies": {
-    "@ensdomains/ens": "github:ensdomains/ens",
+    "@ensdomains/ens": "github:JonahGroendal/ens",
     "x509-forest-of-trust": "github:JonahGroendal/x509-forest-of-trust"
   },
   "devDependencies": {

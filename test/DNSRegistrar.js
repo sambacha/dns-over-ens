@@ -7,7 +7,7 @@ contract('DNSRegistrar', (accounts) => {
   beforeEach(async () => {
     this.ens = await MockENSRegistry.new()
     this.x509 = await MockX509Forest.new(namehash.hash('website.org'), namehash.hash('authority.com'), web3.utils.sha3('pretendThisIsAKey'))
-    this.registrar = await DNSRegistrar.new(this.ens.address, namehash.hash("dnsroot.eth"), this.x509.address)
+    this.registrar = await DNSRegistrar.new(namehash.hash("dnsroot.eth"), this.ens.address, this.x509.address)
     await this.ens.setSubnodeOwner("0x", web3.utils.sha3('eth'), accounts[0])
     await this.ens.setSubnodeOwner(namehash.hash('eth'), web3.utils.sha3('dnsroot'), this.registrar.address)
   })

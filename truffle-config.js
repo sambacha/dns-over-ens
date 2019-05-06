@@ -23,6 +23,11 @@
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
+const HDWalletProvider = require('truffle-hdwallet-provider');
+const infuraKey = "48899b10645a48e189e345be4be19ece";
+
+const fs = require('fs');
+const privateKeys = JSON.parse(fs.readFileSync("keys.json").toString().trim()).private;
 
 module.exports = {
   compilers: {
@@ -47,6 +52,14 @@ module.exports = {
    */
 
   networks: {
+    kovan: {
+      provider: () => new HDWalletProvider(privateKeys, `https://kovan.infura.io/v3/${infuraKey}`, 0, 5),
+      network_id: 42,
+      // gas: 5500000,        // Ropsten has a lower block limit than mainnet
+      // confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+      // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+      // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+    },
     // Useful for testing. The `development` name is special - truffle uses it by default
     // if it's defined here and no other network is specified at the command line.
     // You should run a client (like ganache-cli, geth or parity) in a separate terminal

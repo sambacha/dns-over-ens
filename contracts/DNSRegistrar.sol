@@ -33,10 +33,10 @@ contract DNSRegistrar is IDNSRegistrar {
      * @param _rootNode The node that this registrar administers.
      * @param _x509 The address of X509ForestOfTrust, a data structre of validated certs.
      */
-    constructor(address _ens, bytes32 _rootNode, address _x509) public {
+    constructor(bytes32 _rootNode, address _ens, address _x509) public {
+        rootNode = _rootNode;
         ens = ENS(_ens);
         x509 = X509ForestOfTrust(_x509);
-        rootNode = _rootNode;
         admin = msg.sender;
     }
 
