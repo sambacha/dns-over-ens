@@ -24,7 +24,9 @@ contract('DNSRegistrar', (accounts) => {
   it("should fail to register as owner of website.org.dnsroot.eth", async () => {
     try {
       await this.registrar.register(web3.utils.sha3('org'), web3.utils.sha3('website'), "0x2222222222222222222222222222222222222222")
-      assert.isTrue(false, "It should've reverted")
-    } catch {}
+    } catch {
+      return;
+    }
+    assert.isTrue(false, "It should've reverted");
   })
 })
