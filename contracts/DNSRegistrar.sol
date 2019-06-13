@@ -19,11 +19,11 @@ contract DNSRegistrar is IDNSRegistrar {
     modifier only_cert_owner(bytes32 tld, bytes32 domain) {
         // namehash of domain.tld
         bytes32 node = keccak256(abi.encodePacked(keccak256(abi.encodePacked(bytes32(0), tld)), domain));
-        require(certOwner(node) == msg.sender);
+        require(certOwner(node) == msg.sender, "Only cert owner");
         _;
     }
     modifier only_admin() {
-        require(admin == msg.sender);
+        require(admin == msg.sender, "Only admin");
         _;
     }
 
