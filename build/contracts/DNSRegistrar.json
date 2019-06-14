@@ -7835,12 +7835,12 @@
         }
       },
       "links": {},
-      "address": "0x8a29A39FFbb25B150F04A019bD996A553200a2ca",
-      "transactionHash": "0x3fbf60be02684e7ed26b4ec30ca8cdf5b5ba3122ccb9bddf0facffe4cfa64e12"
+      "address": "0x4A0cFfA1ea532150b89af67A7eD692CC00a9E70d",
+      "transactionHash": "0xa14481995aed7966c92c5c7d5952d518fe098fb01a420b4b9dc5fa71586b8b87"
     }
   },
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-06-13T01:57:00.833Z",
+  "updatedAt": "2019-06-14T01:35:20.450Z",
   "devdoc": {
     "author": "Jonah Groendal",
     "methods": {
