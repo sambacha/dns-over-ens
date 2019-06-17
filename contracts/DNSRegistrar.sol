@@ -78,9 +78,10 @@ contract DNSRegistrar is IDNSRegistrar {
       uint len = x509.toCertIdsLength(node);
       uint32 i;
       uint32 j;
-      // Look through all certificates that were added less than maxCertAge seconds ago
+      // Loop through all certificates starting with the most recently added.
       for (; i<len; i++) {
         certId = x509.toCertIds(node, len-i-1);
+        // Stop if this cert was added longer ago than the maximum allowed certificate age
         if (block.timestamp - x509.timestamp(certId) > maxCertAge)
           break;
         if (isValidCert(certId)) {
@@ -95,6 +96,7 @@ contract DNSRegistrar is IDNSRegistrar {
                   if (rootIds[j] == rootId)
                     alreadyCounted = true;
                 }
+                // Increment cert count
                 if (!alreadyCounted) {
                   rootIds[rootIdsIndex] = rootId;
                   rootIdsIndex++;
@@ -121,22 +123,32 @@ contract DNSRegistrar is IDNSRegistrar {
     function isValidCert(bytes32 certId) internal view returns (bool) {
       bool keyUsagePresent;
       bool[9] memory keyUsageFlags;
+      bytes32 id = certId;
+      bytes32 parentId;
       // Must not be expired
-      if (!(block.timestamp <= x509.validNotAfter(certId)))
+      if (!(block.timestamp <= x509.validNotAfter(id)))
         return false;
       // Must not be older than maxCertAge
-      if(!(block.timestamp - x509.validNotBefore(certId) <= maxCertAge))
+      if(!(block.timestamp - x509.validNotBefore(id) <= maxCertAge))
         return false;
-      (keyUsagePresent, keyUsageFlags) = x509.keyUsage(certId);
+      (keyUsagePresent, keyUsageFlags) = x509.keyUsage(id);
        // Digital Signature and Key Encipherment required
       if (!(keyUsagePresent && keyUsageFlags[0] && keyUsageFlags[2]))
         return false;
       // extKeyUsage must not be critical
-      if (!(!x509.extKeyUsageCritical(certId)))
+      if (!(!x509.extKeyUsageCritical(id)))
         return false;
       // There must be no unparsed critical extensions
-      if (!(!x509.unparsedCriticalExtensionPresent(certId)))
+      if (!(!x509.unparsedCriticalExtensionPresent(id)))
         return false;
+      // There must be no expired certificates in chain above
+      parentId = x509.parentId(id);
+      do {
+        id = parentId;
+        parentId = x509.parentId(id);
+        if (!(block.timestamp <= x509.validNotAfter(id)))
+          return false;
+      } while (id != parentId);
 
       return true;
     }

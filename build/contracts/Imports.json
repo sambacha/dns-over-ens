@@ -1,9 +1,9 @@
 {
   "contractName": "Imports",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.2+commit.1df8f40c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/jonah/dns-on-ens/contracts/Imports.sol\":\"Imports\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jonah/dns-on-ens/contracts/Imports.sol\":{\"keccak256\":\"0x9272ee163964800d9489c025ef29f6243795d11036a60df051e30a29dc4f1a76\",\"urls\":[\"bzzr://b3179209ee9ecd8cd8f39890747902c6b6485b1e97374f2d12a9f3c05cbef15b\"]},\"@ensdomains/ens/contracts/ENS.sol\":{\"keccak256\":\"0xe688db01c0b974f8ff8565557f7fe81aa1f209c1497ec1e74536241f4cc11f08\",\"urls\":[\"bzzr://04aa083550728a1da54d9acf874f4fca77cc3afef81c57f1ec19be78af05019a\"]},\"@ensdomains/ens/contracts/FIFSRegistrar.sol\":{\"keccak256\":\"0x7826f110e75793f4985665a73f3fb42ff5efc410ba33dc1d3e63bedc9b808431\",\"urls\":[\"bzzr://580beebafd3a92e5d3cb2e5b54d3094022c7e7448289053cbee7849e42c9cdec\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058208048c9a76636daada515a1b3d45f5c9f6c5ecde92e31237d17489b355d1ba2060029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058208048c9a76636daada515a1b3d45f5c9f6c5ecde92e31237d17489b355d1ba2060029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.2+commit.1df8f40c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/jonah/dns-on-ens/contracts/Imports.sol\":\"Imports\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jonah/dns-on-ens/contracts/Imports.sol\":{\"keccak256\":\"0x9272ee163964800d9489c025ef29f6243795d11036a60df051e30a29dc4f1a76\",\"urls\":[\"bzzr://b3179209ee9ecd8cd8f39890747902c6b6485b1e97374f2d12a9f3c05cbef15b\"]},\"@ensdomains/ens/contracts/ENS.sol\":{\"keccak256\":\"0xe688db01c0b974f8ff8565557f7fe81aa1f209c1497ec1e74536241f4cc11f08\",\"urls\":[\"bzzr://04aa083550728a1da54d9acf874f4fca77cc3afef81c57f1ec19be78af05019a\"]},\"@ensdomains/ens/contracts/FIFSRegistrar.sol\":{\"keccak256\":\"0xac5ad6a1ba8c66d68d4978dcbab4df33ea1b15ffde5b7a1bc49d10cefbb57528\",\"urls\":[\"bzzr://fae04d1f54f0ee508a1db28531de74f43f6021cd666d604cb0c550e371d5ea4a\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820d2d68cf676d074fda247ee48ac561c39ec650a5e152fc89a43b161ccfb9f64b70029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820d2d68cf676d074fda247ee48ac561c39ec650a5e152fc89a43b161ccfb9f64b70029",
   "sourceMap": "80:20:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;80:20:2;;;;;;;",
   "deployedSourceMap": "80:20:2:-;;;;;",
   "source": "pragma solidity ^0.5.2;\n\nimport \"@ensdomains/ens/contracts/FIFSRegistrar.sol\";\n\ninterface Imports {}\n",
@@ -12,14 +12,14 @@
     "absolutePath": "/home/jonah/dns-on-ens/contracts/Imports.sol",
     "exportedSymbols": {
       "Imports": [
-        593
+        635
       ]
     },
-    "id": 594,
+    "id": 636,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 591,
+        "id": 633,
         "literals": [
           "solidity",
           "^",
@@ -32,10 +32,10 @@
       {
         "absolutePath": "@ensdomains/ens/contracts/FIFSRegistrar.sol",
         "file": "@ensdomains/ens/contracts/FIFSRegistrar.sol",
-        "id": 592,
+        "id": 634,
         "nodeType": "ImportDirective",
-        "scope": 594,
-        "sourceUnit": 1012,
+        "scope": 636,
+        "sourceUnit": 1055,
         "src": "25:53:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -46,14 +46,14 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 593,
+        "id": 635,
         "linearizedBaseContracts": [
-          593
+          635
         ],
         "name": "Imports",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 594,
+        "scope": 636,
         "src": "80:20:2"
       }
     ],
@@ -63,14 +63,14 @@
     "absolutePath": "/home/jonah/dns-on-ens/contracts/Imports.sol",
     "exportedSymbols": {
       "Imports": [
-        593
+        635
       ]
     },
-    "id": 594,
+    "id": 636,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 591,
+        "id": 633,
         "literals": [
           "solidity",
           "^",
@@ -83,10 +83,10 @@
       {
         "absolutePath": "@ensdomains/ens/contracts/FIFSRegistrar.sol",
         "file": "@ensdomains/ens/contracts/FIFSRegistrar.sol",
-        "id": 592,
+        "id": 634,
         "nodeType": "ImportDirective",
-        "scope": 594,
-        "sourceUnit": 1012,
+        "scope": 636,
+        "sourceUnit": 1055,
         "src": "25:53:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -97,14 +97,14 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 593,
+        "id": 635,
         "linearizedBaseContracts": [
-          593
+          635
         ],
         "name": "Imports",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 594,
+        "scope": 636,
         "src": "80:20:2"
       }
     ],
@@ -116,7 +116,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-06-17T01:48:14.587Z",
+  "updatedAt": "2019-06-17T04:14:39.376Z",
   "devdoc": {
     "methods": {}
   },
