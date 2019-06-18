@@ -40,14 +40,14 @@
     "absolutePath": "sig-verify-algs/contracts/Algorithm.sol",
     "exportedSymbols": {
       "Algorithm": [
-        2663
+        2665
       ]
     },
-    "id": 2664,
+    "id": 2666,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2651,
+        "id": 2653,
         "literals": [
           "solidity",
           "^",
@@ -63,9 +63,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2663,
+        "id": 2665,
         "linearizedBaseContracts": [
-          2663
+          2665
         ],
         "name": "Algorithm",
         "nodeType": "ContractDefinition",
@@ -73,22 +73,22 @@
           {
             "body": null,
             "documentation": "@dev Verifies a signature.\n@param key The signers pub key\n@param data The data that's is signed.\n@param sig The signature.\n@return True iff the signature is valid.",
-            "id": 2662,
+            "id": 2664,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "verify",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2658,
+              "id": 2660,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2653,
+                  "id": 2655,
                   "name": "key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2664,
                   "src": "1600:18:10",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -97,7 +97,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2652,
+                    "id": 2654,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1600:5:10",
@@ -111,10 +111,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2655,
+                  "id": 2657,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2664,
                   "src": "1620:19:10",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -123,7 +123,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2654,
+                    "id": 2656,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1620:5:10",
@@ -137,10 +137,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2657,
+                  "id": 2659,
                   "name": "sig",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2664,
                   "src": "1641:18:10",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -149,7 +149,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2656,
+                    "id": 2658,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1641:5:10",
@@ -165,15 +165,15 @@
               "src": "1599:61:10"
             },
             "returnParameters": {
-              "id": 2661,
+              "id": 2663,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2660,
+                  "id": 2662,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2664,
                   "src": "1684:4:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -182,7 +182,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2659,
+                    "id": 2661,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1684:4:10",
@@ -197,14 +197,14 @@
               ],
               "src": "1683:6:10"
             },
-            "scope": 2663,
+            "scope": 2665,
             "src": "1584:106:10",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 2664,
+        "scope": 2666,
         "src": "1349:343:10"
       }
     ],
@@ -214,14 +214,14 @@
     "absolutePath": "sig-verify-algs/contracts/Algorithm.sol",
     "exportedSymbols": {
       "Algorithm": [
-        2663
+        2665
       ]
     },
-    "id": 2664,
+    "id": 2666,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2651,
+        "id": 2653,
         "literals": [
           "solidity",
           "^",
@@ -237,9 +237,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 2663,
+        "id": 2665,
         "linearizedBaseContracts": [
-          2663
+          2665
         ],
         "name": "Algorithm",
         "nodeType": "ContractDefinition",
@@ -247,22 +247,22 @@
           {
             "body": null,
             "documentation": "@dev Verifies a signature.\n@param key The signers pub key\n@param data The data that's is signed.\n@param sig The signature.\n@return True iff the signature is valid.",
-            "id": 2662,
+            "id": 2664,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "verify",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 2658,
+              "id": 2660,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2653,
+                  "id": 2655,
                   "name": "key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2664,
                   "src": "1600:18:10",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -271,7 +271,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2652,
+                    "id": 2654,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1600:5:10",
@@ -285,10 +285,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2655,
+                  "id": 2657,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2664,
                   "src": "1620:19:10",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -297,7 +297,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2654,
+                    "id": 2656,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1620:5:10",
@@ -311,10 +311,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 2657,
+                  "id": 2659,
                   "name": "sig",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2664,
                   "src": "1641:18:10",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -323,7 +323,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 2656,
+                    "id": 2658,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "1641:5:10",
@@ -339,15 +339,15 @@
               "src": "1599:61:10"
             },
             "returnParameters": {
-              "id": 2661,
+              "id": 2663,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 2660,
+                  "id": 2662,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 2662,
+                  "scope": 2664,
                   "src": "1684:4:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -356,7 +356,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 2659,
+                    "id": 2661,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1684:4:10",
@@ -371,14 +371,14 @@
               ],
               "src": "1683:6:10"
             },
-            "scope": 2663,
+            "scope": 2665,
             "src": "1584:106:10",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 2664,
+        "scope": 2666,
         "src": "1349:343:10"
       }
     ],
@@ -390,7 +390,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-06-17T04:14:39.410Z",
+  "updatedAt": "2019-06-18T04:51:20.579Z",
   "devdoc": {
     "methods": {
       "verify(bytes,bytes,bytes)": {

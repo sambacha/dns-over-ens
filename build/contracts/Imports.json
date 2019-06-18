@@ -12,14 +12,14 @@
     "absolutePath": "/home/jonah/dns-on-ens/contracts/Imports.sol",
     "exportedSymbols": {
       "Imports": [
-        635
+        637
       ]
     },
-    "id": 636,
+    "id": 638,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 633,
+        "id": 635,
         "literals": [
           "solidity",
           "^",
@@ -32,10 +32,10 @@
       {
         "absolutePath": "@ensdomains/ens/contracts/FIFSRegistrar.sol",
         "file": "@ensdomains/ens/contracts/FIFSRegistrar.sol",
-        "id": 634,
+        "id": 636,
         "nodeType": "ImportDirective",
-        "scope": 636,
-        "sourceUnit": 1055,
+        "scope": 638,
+        "sourceUnit": 1057,
         "src": "25:53:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -46,14 +46,14 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 635,
+        "id": 637,
         "linearizedBaseContracts": [
-          635
+          637
         ],
         "name": "Imports",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 636,
+        "scope": 638,
         "src": "80:20:2"
       }
     ],
@@ -63,14 +63,14 @@
     "absolutePath": "/home/jonah/dns-on-ens/contracts/Imports.sol",
     "exportedSymbols": {
       "Imports": [
-        635
+        637
       ]
     },
-    "id": 636,
+    "id": 638,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 633,
+        "id": 635,
         "literals": [
           "solidity",
           "^",
@@ -83,10 +83,10 @@
       {
         "absolutePath": "@ensdomains/ens/contracts/FIFSRegistrar.sol",
         "file": "@ensdomains/ens/contracts/FIFSRegistrar.sol",
-        "id": 634,
+        "id": 636,
         "nodeType": "ImportDirective",
-        "scope": 636,
-        "sourceUnit": 1055,
+        "scope": 638,
+        "sourceUnit": 1057,
         "src": "25:53:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -97,14 +97,14 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 635,
+        "id": 637,
         "linearizedBaseContracts": [
-          635
+          637
         ],
         "name": "Imports",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 636,
+        "scope": 638,
         "src": "80:20:2"
       }
     ],
@@ -116,7 +116,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-06-17T04:14:39.376Z",
+  "updatedAt": "2019-06-18T04:51:20.535Z",
   "devdoc": {
     "methods": {}
   },

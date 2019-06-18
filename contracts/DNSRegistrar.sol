@@ -84,30 +84,31 @@ contract DNSRegistrar is IDNSRegistrar {
         // Stop if this cert was added longer ago than the maximum allowed certificate age
         if (block.timestamp - x509.timestamp(certId) > maxCertAge)
           break;
-        if (isValidCert(certId)) {
-          rootId = x509.rootOf(certId);
-          if (isTrustedCert[rootId]) {
-            certOwner = x509.owner(certId);
-            if (certOwner == account) {
-              if (rootIdsIndex < rootIds.length) {
-                // A root cert must not be counted more than once
-                alreadyCounted = false;
-                for (j=0; j<rootIdsIndex+1 && !alreadyCounted; j++) {
-                  if (rootIds[j] == rootId)
-                    alreadyCounted = true;
-                }
-                // Increment cert count
-                if (!alreadyCounted) {
-                  rootIds[rootIdsIndex] = rootId;
-                  rootIdsIndex++;
-                }
-              }
+        if (!isValidCert(certId))
+          continue;
+        rootId = x509.rootOf(certId);
+        if (!isTrustedCert[rootId])
+          continue;
+        certOwner = x509.owner(certId);
+        if (certOwner == account) {
+          if (rootIdsIndex < rootIds.length) {
+            // Certs with the same root cert are only counted once
+            alreadyCounted = false;
+            for (j=0; j<rootIdsIndex+1 && !alreadyCounted; j++) {
+              if (rootIds[j] == rootId)
+                alreadyCounted = true;
             }
-            // A different account owns a certificate for this domain
-            else if (certOwner != address(0)) {
-              return false;
+            // Increment certificate count and save its root's id so it doesn't
+            // get re-counted.
+            if (!alreadyCounted) {
+              rootIds[rootIdsIndex] = rootId;
+              rootIdsIndex++;
             }
           }
+        }
+        else if (certOwner != address(0)) {
+          // There must be no conflicting certificate owners for a given domain
+          return false;
         }
       }
 

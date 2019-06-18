@@ -43,7 +43,7 @@ module.exports = function(deployer, network, accounts) {
       //   // Set DNSRegistrar as owner
       //   .then(() => testRegistrar.register(web3.utils.sha3('dnsroot'), DNSRegistrar.address))
       // })
-      // Add LetsEncrypt's staging environment root cert as trust anchor
+      // Add LetsEncrypt's staging environment root certificate as a trust anchor
       .then(() => DNSRegistrar.deployed())
       .then(instance => instance.addTrustAnchor(certId))
     })
