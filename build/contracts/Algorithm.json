@@ -390,7 +390,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-06-18T04:51:20.579Z",
+  "updatedAt": "2019-07-13T22:16:38.837Z",
   "devdoc": {
     "methods": {
       "verify(bytes,bytes,bytes)": {

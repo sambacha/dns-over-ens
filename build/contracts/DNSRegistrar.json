@@ -15081,12 +15081,12 @@
         }
       },
       "links": {},
-      "address": "0xD9F29b80E850d7b8003fFD14ecB6E75e45282D31",
-      "transactionHash": "0x3483a103b36796305930e23070c60f7e5c03f03f3f177547e5ffdbf83ac9a25e"
+      "address": "0x19881dC1eF225C9D75B361Dc4e4FD88329781aE5",
+      "transactionHash": "0xd585cb4cafc613bbc9251988b61c2f015fa0979b5b7552a8f0a38a831e9a8e26"
     }
   },
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-06-18T04:52:48.678Z",
+  "updatedAt": "2019-07-13T22:17:24.820Z",
   "devdoc": {
     "author": "Jonah Groendal",
     "methods": {

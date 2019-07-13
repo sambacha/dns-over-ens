@@ -45026,7 +45026,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-06-18T04:51:20.590Z",
+  "updatedAt": "2019-07-13T22:17:24.879Z",
   "devdoc": {
     "methods": {
       "addCert(bytes,bytes)": {
