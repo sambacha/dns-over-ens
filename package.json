@@ -1,5 +1,5 @@
 {
-  "name": "dns-on-ens",
+  "name": "dns-over-ens",
   "version": "1.0.0",
   "description": "Register your DNS domains under this ENS subdomain using X509 certificates.",
   "main": "truffle-config.js",

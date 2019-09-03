@@ -1,15 +1,15 @@
 {
   "contractName": "Imports",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.2+commit.1df8f40c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/jonah/dns-on-ens/contracts/Imports.sol\":\"Imports\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jonah/dns-on-ens/contracts/Imports.sol\":{\"keccak256\":\"0x9272ee163964800d9489c025ef29f6243795d11036a60df051e30a29dc4f1a76\",\"urls\":[\"bzzr://b3179209ee9ecd8cd8f39890747902c6b6485b1e97374f2d12a9f3c05cbef15b\"]},\"@ensdomains/ens/contracts/ENS.sol\":{\"keccak256\":\"0xe688db01c0b974f8ff8565557f7fe81aa1f209c1497ec1e74536241f4cc11f08\",\"urls\":[\"bzzr://04aa083550728a1da54d9acf874f4fca77cc3afef81c57f1ec19be78af05019a\"]},\"@ensdomains/ens/contracts/FIFSRegistrar.sol\":{\"keccak256\":\"0xac5ad6a1ba8c66d68d4978dcbab4df33ea1b15ffde5b7a1bc49d10cefbb57528\",\"urls\":[\"bzzr://fae04d1f54f0ee508a1db28531de74f43f6021cd666d604cb0c550e371d5ea4a\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a72305820d2d68cf676d074fda247ee48ac561c39ec650a5e152fc89a43b161ccfb9f64b70029",
-  "deployedBytecode": "0x6080604052600080fdfea165627a7a72305820d2d68cf676d074fda247ee48ac561c39ec650a5e152fc89a43b161ccfb9f64b70029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.2+commit.1df8f40c\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/jonah/dns-over-ens/contracts/Imports.sol\":\"Imports\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/jonah/dns-over-ens/contracts/Imports.sol\":{\"keccak256\":\"0x9272ee163964800d9489c025ef29f6243795d11036a60df051e30a29dc4f1a76\",\"urls\":[\"bzzr://b3179209ee9ecd8cd8f39890747902c6b6485b1e97374f2d12a9f3c05cbef15b\"]},\"@ensdomains/ens/contracts/ENS.sol\":{\"keccak256\":\"0xe688db01c0b974f8ff8565557f7fe81aa1f209c1497ec1e74536241f4cc11f08\",\"urls\":[\"bzzr://04aa083550728a1da54d9acf874f4fca77cc3afef81c57f1ec19be78af05019a\"]},\"@ensdomains/ens/contracts/FIFSRegistrar.sol\":{\"keccak256\":\"0xac5ad6a1ba8c66d68d4978dcbab4df33ea1b15ffde5b7a1bc49d10cefbb57528\",\"urls\":[\"bzzr://fae04d1f54f0ee508a1db28531de74f43f6021cd666d604cb0c550e371d5ea4a\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582009b5a25b1024d88aa0e75a6a66a8bb1e64d15a667a9c5d0440c27d9a21acb8bf0029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582009b5a25b1024d88aa0e75a6a66a8bb1e64d15a667a9c5d0440c27d9a21acb8bf0029",
   "sourceMap": "80:20:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;80:20:2;;;;;;;",
   "deployedSourceMap": "80:20:2:-;;;;;",
   "source": "pragma solidity ^0.5.2;\n\nimport \"@ensdomains/ens/contracts/FIFSRegistrar.sol\";\n\ninterface Imports {}\n",
-  "sourcePath": "/home/jonah/dns-on-ens/contracts/Imports.sol",
+  "sourcePath": "/home/jonah/dns-over-ens/contracts/Imports.sol",
   "ast": {
-    "absolutePath": "/home/jonah/dns-on-ens/contracts/Imports.sol",
+    "absolutePath": "/home/jonah/dns-over-ens/contracts/Imports.sol",
     "exportedSymbols": {
       "Imports": [
         637
@@ -60,7 +60,7 @@
     "src": "0:101:2"
   },
   "legacyAST": {
-    "absolutePath": "/home/jonah/dns-on-ens/contracts/Imports.sol",
+    "absolutePath": "/home/jonah/dns-over-ens/contracts/Imports.sol",
     "exportedSymbols": {
       "Imports": [
         637
@@ -116,7 +116,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-07-13T22:16:38.805Z",
+  "updatedAt": "2019-09-03T00:07:43.699Z",
   "devdoc": {
     "methods": {}
   },

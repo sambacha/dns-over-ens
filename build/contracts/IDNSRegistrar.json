@@ -188,9 +188,9 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.2;\n\ninterface IDNSRegistrar {\n    event DomainRegistered(bytes32, address);\n    event TrustAnchorAdded(bytes32);\n    event TrustAnchorRemoved(bytes32);\n    event MaxCertAgeSet(uint40);\n    event MinNumCertsSet(uint40);\n\n    function register(bytes32 tld, bytes32 domain, address owner) external;\n    function isDomainOwner(bytes32 node, address account) external view returns (bool);\n    // Administrative methods:\n    function addTrustAnchor(bytes32 certId) external;\n    function removeTrustAnchor(bytes32 certId) external;\n    function setMaxCertAge(uint40 _maxCertAge) external;\n    function setMinNumCerts(uint40 _minNumCerts) external;\n    function setRootNodeOwner(address newOwner) external;\n}\n",
-  "sourcePath": "/home/jonah/dns-on-ens/contracts/IDNSRegistrar.sol",
+  "sourcePath": "/home/jonah/dns-over-ens/contracts/IDNSRegistrar.sol",
   "ast": {
-    "absolutePath": "/home/jonah/dns-on-ens/contracts/IDNSRegistrar.sol",
+    "absolutePath": "/home/jonah/dns-over-ens/contracts/IDNSRegistrar.sol",
     "exportedSymbols": {
       "IDNSRegistrar": [
         633
@@ -955,7 +955,7 @@
     "src": "0:723:1"
   },
   "legacyAST": {
-    "absolutePath": "/home/jonah/dns-on-ens/contracts/IDNSRegistrar.sol",
+    "absolutePath": "/home/jonah/dns-over-ens/contracts/IDNSRegistrar.sol",
     "exportedSymbols": {
       "IDNSRegistrar": [
         633
@@ -1725,7 +1725,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.9",
-  "updatedAt": "2019-07-13T22:16:38.804Z",
+  "updatedAt": "2019-09-03T00:07:43.696Z",
   "devdoc": {
     "methods": {}
   },
