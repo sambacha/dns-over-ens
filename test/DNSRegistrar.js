@@ -9,7 +9,8 @@ contract('DNSRegistrar', (accounts) => {
     this.x509 = await MockX509Forest.new(namehash.hash('website.org'), namehash.hash('authority.com'), web3.utils.sha3('pretendThisIsAKey'))
     this.registrar = await DNSRegistrar.new(namehash.hash("dnsroot.eth"), this.ens.address, this.x509.address, 91*24*60*60, 1)
     await this.ens.setSubnodeOwner("0x", web3.utils.sha3('eth'), accounts[0])
-    await this.ens.setSubnodeOwner(namehash.hash('eth'), web3.utils.sha3('dnsroot'), this.registrar.address)
+    await this.ens.setSubnodeOwner(namehash.hash('eth'), web3.utils.sha3('dnsroot'), accounts[0])
+    await this.ens.setApprovalForAll(this.registrar.address, true)
   })
 
   it("should register an address as owner of website.org.dnsroot.eth", async () => {

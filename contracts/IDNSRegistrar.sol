@@ -14,5 +14,4 @@ interface IDNSRegistrar {
     function removeTrustAnchor(bytes32 certId) external;
     function setMaxCertAge(uint40 _maxCertAge) external;
     function setMinNumCerts(uint40 _minNumCerts) external;
-    function setRootNodeOwner(address newOwner) external;
 }

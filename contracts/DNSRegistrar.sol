@@ -11,7 +11,6 @@ import "x509-forest-of-trust/contracts/X509ForestOfTrust.sol";
 contract DNSRegistrar is IDNSRegistrar {
     ENSRegistry ens;
     bytes32 rootNode;
-    address admin;
     X509ForestOfTrust x509;
     // certId => isTrusted
     mapping(bytes32 => bool) isTrustedCert;
@@ -28,8 +27,8 @@ contract DNSRegistrar is IDNSRegistrar {
         require(isDomainOwner(node, msg.sender), "Only domain owner");
         _;
     }
-    modifier only_admin() {
-        require(admin == msg.sender, "Only admin");
+    modifier only_root_node_owner() {
+        require(ens.owner(rootNode) == msg.sender, "Only root node owner");
         _;
     }
 
@@ -38,12 +37,13 @@ contract DNSRegistrar is IDNSRegistrar {
      * @param _ens The address of the ENS registry.
      * @param _rootNode The node that this registrar administers.
      * @param _x509 The address of X509ForestOfTrust, a data structre of validated certs.
+     * @param _maxCertAge The max age a valid leaf cert is allowed to be.
+     * @param _minNumCerts The min number of certificate authorities.
      */
     constructor(bytes32 _rootNode, address _ens, address _x509, uint40 _maxCertAge, uint40 _minNumCerts) public {
         rootNode = _rootNode;
         ens = ENSRegistry(_ens);
         x509 = X509ForestOfTrust(_x509);
-        admin = msg.sender;
         maxCertAge = _maxCertAge;
         minNumCerts = _minNumCerts;
     }
@@ -57,8 +57,8 @@ contract DNSRegistrar is IDNSRegistrar {
     function register(bytes32 tld, bytes32 domain, address owner) external only_domain_owner(tld, domain) {
       bytes32 tldNode = keccak256(abi.encodePacked(rootNode, tld));
       emit DomainRegistered(keccak256(abi.encodePacked(tldNode, domain)), owner);
-      if (ens.owner(tldNode) != address(this))
-        ens.setSubnodeOwner(rootNode, tld, address(this));
+      if (ens.owner(tldNode) != ens.owner(rootNode))
+        ens.setSubnodeOwner(rootNode, tld, ens.owner(rootNode));
       ens.setSubnodeOwner(tldNode, domain, owner);
     }
 
@@ -158,7 +158,7 @@ contract DNSRegistrar is IDNSRegistrar {
      * @dev Add a trusted root cert (from a trustworthy certificate authority)
      * @param certId The keccak256 hash of the cert's public key
      */
-    function addTrustAnchor(bytes32 certId) external only_admin {
+    function addTrustAnchor(bytes32 certId) external only_root_node_owner {
         emit TrustAnchorAdded(certId);
         isTrustedCert[certId] = true;
     }
@@ -167,26 +167,18 @@ contract DNSRegistrar is IDNSRegistrar {
      * @dev Remove a trusted root cert
      * @param certId The keccak256 hash of the cert's public key
      */
-    function removeTrustAnchor(bytes32 certId) external only_admin {
+    function removeTrustAnchor(bytes32 certId) external only_root_node_owner {
         emit TrustAnchorRemoved(certId);
         isTrustedCert[certId] = false;
     }
 
-    function setMaxCertAge(uint40 _maxCertAge) external only_admin {
+    function setMaxCertAge(uint40 _maxCertAge) external only_root_node_owner {
       emit MaxCertAgeSet(_maxCertAge);
       maxCertAge = _maxCertAge;
     }
 
-    function setMinNumCerts(uint40 _minNumCerts) external only_admin {
+    function setMinNumCerts(uint40 _minNumCerts) external only_root_node_owner {
       emit MinNumCertsSet(_minNumCerts);
       minNumCerts = _minNumCerts;
-    }
-
-    /**
-     * @dev End this contract's ownership of rootNode
-     * @param newOwner The address to transfer ownership to
-     */
-    function setRootNodeOwner(address newOwner) external only_admin {
-        ens.setOwner(rootNode, newOwner);
     }
 }
