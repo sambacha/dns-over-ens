@@ -37,8 +37,8 @@
     "x509-forest-of-trust": "github:JonahGroendal/x509-forest-of-trust"
   },
   "devDependencies": {
-    "@truffle/hdwallet-provider": "^1.2.0",
+    "@truffle/hdwallet-provider": "^2.0.16",
     "eth-ens-namehash": "^2.0.8",
-    "truffle": "^5.1.54"
+    "truffle": "^5.5.32"
   }
 }

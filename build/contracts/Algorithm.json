@@ -40,14 +40,14 @@
     "absolutePath": "@ensdomains/dnssec-oracle/contracts/algorithms/Algorithm.sol",
     "exportedSymbols": {
       "Algorithm": [
-        1407
+        734
       ]
     },
-    "id": 1408,
+    "id": 735,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1395,
+        "id": 722,
         "literals": [
           "solidity",
           ">",
@@ -55,7 +55,7 @@
           ".23"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:5"
+        "src": "0:24:1"
       },
       {
         "baseContracts": [],
@@ -63,9 +63,9 @@
         "contractKind": "interface",
         "documentation": "@dev An interface for contracts implementing a DNSSEC (signing) algorithm.",
         "fullyImplemented": false,
-        "id": 1407,
+        "id": 734,
         "linearizedBaseContracts": [
-          1407
+          734
         ],
         "name": "Algorithm",
         "nodeType": "ContractDefinition",
@@ -73,23 +73,23 @@
           {
             "body": null,
             "documentation": "@dev Verifies a signature.\n@param key The public key to verify with.\n@param data The signed data to verify.\n@param signature The signature to verify.\n@return True iff the signature is valid.",
-            "id": 1406,
+            "id": 733,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "verify",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1402,
+              "id": 729,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1397,
+                  "id": 724,
                   "name": "key",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1406,
-                  "src": "388:18:5",
+                  "scope": 733,
+                  "src": "388:18:1",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -97,10 +97,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1396,
+                    "id": 723,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "388:5:5",
+                    "src": "388:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -111,11 +111,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1399,
+                  "id": 726,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1406,
-                  "src": "408:19:5",
+                  "scope": 733,
+                  "src": "408:19:1",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -123,10 +123,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1398,
+                    "id": 725,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "408:5:5",
+                    "src": "408:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -137,11 +137,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1401,
+                  "id": 728,
                   "name": "signature",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1406,
-                  "src": "429:24:5",
+                  "scope": 733,
+                  "src": "429:24:1",
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
@@ -149,10 +149,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1400,
+                    "id": 727,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "429:5:5",
+                    "src": "429:5:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -162,19 +162,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "387:67:5"
+              "src": "387:67:1"
             },
             "returnParameters": {
-              "id": 1405,
+              "id": 732,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1404,
+                  "id": 731,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1406,
-                  "src": "478:4:5",
+                  "scope": 733,
+                  "src": "478:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -182,10 +182,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1403,
+                    "id": 730,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "478:4:5",
+                    "src": "478:4:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -195,202 +195,219 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "477:6:5"
+              "src": "477:6:1"
             },
-            "scope": 1407,
-            "src": "372:112:5",
+            "scope": 734,
+            "src": "372:112:1",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 1408,
-        "src": "110:376:5"
+        "scope": 735,
+        "src": "110:376:1"
       }
     ],
-    "src": "0:487:5"
+    "src": "0:487:1"
   },
   "legacyAST": {
-    "absolutePath": "@ensdomains/dnssec-oracle/contracts/algorithms/Algorithm.sol",
-    "exportedSymbols": {
-      "Algorithm": [
-        1407
-      ]
+    "attributes": {
+      "absolutePath": "@ensdomains/dnssec-oracle/contracts/algorithms/Algorithm.sol",
+      "exportedSymbols": {
+        "Algorithm": [
+          734
+        ]
+      }
     },
-    "id": 1408,
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 1395,
-        "literals": [
-          "solidity",
-          ">",
-          "0.4",
-          ".23"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "0:24:5"
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">",
+            "0.4",
+            ".23"
+          ]
+        },
+        "id": 722,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
       },
       {
-        "baseContracts": [],
-        "contractDependencies": [],
-        "contractKind": "interface",
-        "documentation": "@dev An interface for contracts implementing a DNSSEC (signing) algorithm.",
-        "fullyImplemented": false,
-        "id": 1407,
-        "linearizedBaseContracts": [
-          1407
-        ],
-        "name": "Algorithm",
-        "nodeType": "ContractDefinition",
-        "nodes": [
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "interface",
+          "documentation": "@dev An interface for contracts implementing a DNSSEC (signing) algorithm.",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            734
+          ],
+          "name": "Algorithm",
+          "scope": 735
+        },
+        "children": [
           {
-            "body": null,
-            "documentation": "@dev Verifies a signature.\n@param key The public key to verify with.\n@param data The signed data to verify.\n@param signature The signature to verify.\n@return True iff the signature is valid.",
-            "id": 1406,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "verify",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 1402,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1397,
-                  "name": "key",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1406,
-                  "src": "388:18:5",
-                  "stateVariable": false,
-                  "storageLocation": "calldata",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes_calldata_ptr",
-                    "typeString": "bytes"
-                  },
-                  "typeName": {
-                    "id": 1396,
-                    "name": "bytes",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "388:5:5",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes_storage_ptr",
-                      "typeString": "bytes"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1399,
-                  "name": "data",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1406,
-                  "src": "408:19:5",
-                  "stateVariable": false,
-                  "storageLocation": "calldata",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes_calldata_ptr",
-                    "typeString": "bytes"
-                  },
-                  "typeName": {
-                    "id": 1398,
-                    "name": "bytes",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "408:5:5",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes_storage_ptr",
-                      "typeString": "bytes"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 1401,
-                  "name": "signature",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1406,
-                  "src": "429:24:5",
-                  "stateVariable": false,
-                  "storageLocation": "calldata",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bytes_calldata_ptr",
-                    "typeString": "bytes"
-                  },
-                  "typeName": {
-                    "id": 1400,
-                    "name": "bytes",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "429:5:5",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bytes_storage_ptr",
-                      "typeString": "bytes"
-                    }
-                  },
-                  "value": null,
-                  "visibility": "internal"
-                }
+            "attributes": {
+              "body": null,
+              "documentation": "@dev Verifies a signature.\n@param key The public key to verify with.\n@param data The signed data to verify.\n@param signature The signature to verify.\n@return True iff the signature is valid.",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
               ],
-              "src": "387:67:5"
+              "name": "verify",
+              "scope": 734,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
             },
-            "returnParameters": {
-              "id": 1405,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 1404,
-                  "name": "",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 1406,
-                  "src": "478:4:5",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_bool",
-                    "typeString": "bool"
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "key",
+                      "scope": 733,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 723,
+                        "name": "ElementaryTypeName",
+                        "src": "388:5:1"
+                      }
+                    ],
+                    "id": 724,
+                    "name": "VariableDeclaration",
+                    "src": "388:18:1"
                   },
-                  "typeName": {
-                    "id": 1403,
-                    "name": "bool",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "478:4:5",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "data",
+                      "scope": 733,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 725,
+                        "name": "ElementaryTypeName",
+                        "src": "408:5:1"
+                      }
+                    ],
+                    "id": 726,
+                    "name": "VariableDeclaration",
+                    "src": "408:19:1"
                   },
-                  "value": null,
-                  "visibility": "internal"
-                }
-              ],
-              "src": "477:6:5"
-            },
-            "scope": 1407,
-            "src": "372:112:5",
-            "stateMutability": "view",
-            "superFunction": null,
-            "visibility": "external"
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "signature",
+                      "scope": 733,
+                      "stateVariable": false,
+                      "storageLocation": "calldata",
+                      "type": "bytes",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bytes",
+                          "type": "bytes"
+                        },
+                        "id": 727,
+                        "name": "ElementaryTypeName",
+                        "src": "429:5:1"
+                      }
+                    ],
+                    "id": 728,
+                    "name": "VariableDeclaration",
+                    "src": "429:24:1"
+                  }
+                ],
+                "id": 729,
+                "name": "ParameterList",
+                "src": "387:67:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 733,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 730,
+                        "name": "ElementaryTypeName",
+                        "src": "478:4:1"
+                      }
+                    ],
+                    "id": 731,
+                    "name": "VariableDeclaration",
+                    "src": "478:4:1"
+                  }
+                ],
+                "id": 732,
+                "name": "ParameterList",
+                "src": "477:6:1"
+              }
+            ],
+            "id": 733,
+            "name": "FunctionDefinition",
+            "src": "372:112:1"
           }
         ],
-        "scope": 1408,
-        "src": "110:376:5"
+        "id": 734,
+        "name": "ContractDefinition",
+        "src": "110:376:1"
       }
     ],
-    "src": "0:487:5"
+    "id": 735,
+    "name": "SourceUnit",
+    "src": "0:487:1"
   },
   "compiler": {
     "name": "solc",
     "version": "0.5.2+commit.1df8f40c.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-25T03:45:50.319Z",
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-09-30T22:38:27.136Z",
   "devdoc": {
     "details": "An interface for contracts implementing a DNSSEC (signing) algorithm.",
     "methods": {
