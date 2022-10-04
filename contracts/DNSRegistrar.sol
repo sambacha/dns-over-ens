@@ -1,4 +1,4 @@
-pragma solidity ^0.5.2;
+pragma solidity ^0.5.17;
 
 import "./IDNSRegistrar.sol";
 import "@ensdomains/ens/contracts/ENSRegistry.sol";

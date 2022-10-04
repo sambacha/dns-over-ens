@@ -1,4 +1,4 @@
-pragma solidity  ^0.5.2;
+pragma solidity  ^0.5.17;
 
 /*
  * @dev Stores validated X.509 certificate chains in parent pointer trees.
