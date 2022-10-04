@@ -39,6 +39,7 @@
   "devDependencies": {
     "@truffle/hdwallet-provider": "^2.0.16",
     "eth-ens-namehash": "^2.0.8",
-    "truffle": "^5.5.32"
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.24"
   }
 }
