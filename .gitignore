@@ -1,2 +1,8 @@
+.DS_Store
+*.zip
+cache/
+artifacts/
+tmp/
+coverage/
 node_modules/
 keys.json

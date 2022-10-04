@@ -1,0 +1,127 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820670fd5190bce1443c41592c038c16b9e58d717f5993fc850159790eef6a9e5a664736f6c63430005110032",
+    "sourceMap": "81:20:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;81:20:2;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052600080fdfea265627a7a72315820670fd5190bce1443c41592c038c16b9e58d717f5993fc850159790eef6a9e5a664736f6c63430005110032",
+    "sourceMap": "81:20:2:-;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"contracts/Imports.sol\":\"Imports\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/=node_modules/@ensdomains/\",\":asn1-decode/=node_modules/asn1-decode/\",\":ens-namehash/=node_modules/ens-namehash/\",\":ethereum-datetime/=node_modules/ethereum-datetime/\",\":sig-verify-algs/=node_modules/sig-verify-algs/\",\":truffle/=node_modules/truffle/\",\":x509-forest-of-trust/=node_modules/x509-forest-of-trust/\"]},\"sources\":{\"contracts/Imports.sol\":{\"keccak256\":\"0x8796e948e8c12294421abe622f75d95b2b3ceceb032e01f2b56114d812c586f2\",\"urls\":[\"bzz-raw://e8026bf79bb7ab59052f30bb202971038d8058e41cd2f58b13dba30cd322bc55\",\"dweb:/ipfs/QmcExdnCjvuvynSGgkzsfYNLSBhMFKkcKLCfXVo4M66KsQ\"]},\"node_modules/@ensdomains/ens/contracts/ENS.sol\":{\"keccak256\":\"0x10b88673d8c180cd62523be4fec7607c65594eb4f0c561fa0fbc0784422b4871\",\"urls\":[\"bzz-raw://b3de1882a4a1a1b13c27ee6dc04cc58c34ac392c80cad507de2cdfa8c02712fe\",\"dweb:/ipfs/QmeKcaBF8QdJjXiqFrPJkAtK3et5kUL8XJrnHjwhAThRMT\"]},\"node_modules/@ensdomains/ens/contracts/FIFSRegistrar.sol\":{\"keccak256\":\"0xee608fdeeea6d7c0e6cb5d69b27a0e6c0658fad024c31ab56d52ccd8c7c0fcd5\",\"urls\":[\"bzz-raw://b81fc1330b804af1f0a0cc0cbe00b6c95fffe113c656c2db353893b0e448be9a\",\"dweb:/ipfs/QmcXnnD4uLw3wxceFhWahicL36kG15t9rnpBhMfem93Uhs\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.5.17+commit.d19bba13"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "methods": {}
+      },
+      "userdoc": {
+        "methods": {}
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":asn1-decode/=node_modules/asn1-decode/",
+        ":ens-namehash/=node_modules/ens-namehash/",
+        ":ethereum-datetime/=node_modules/ethereum-datetime/",
+        ":sig-verify-algs/=node_modules/sig-verify-algs/",
+        ":truffle/=node_modules/truffle/",
+        ":x509-forest-of-trust/=node_modules/x509-forest-of-trust/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "compilationTarget": {
+        "contracts/Imports.sol": "Imports"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "contracts/Imports.sol": {
+        "keccak256": "0x8796e948e8c12294421abe622f75d95b2b3ceceb032e01f2b56114d812c586f2",
+        "urls": [
+          "bzz-raw://e8026bf79bb7ab59052f30bb202971038d8058e41cd2f58b13dba30cd322bc55",
+          "dweb:/ipfs/QmcExdnCjvuvynSGgkzsfYNLSBhMFKkcKLCfXVo4M66KsQ"
+        ],
+        "license": null
+      },
+      "node_modules/@ensdomains/ens/contracts/ENS.sol": {
+        "keccak256": "0x10b88673d8c180cd62523be4fec7607c65594eb4f0c561fa0fbc0784422b4871",
+        "urls": [
+          "bzz-raw://b3de1882a4a1a1b13c27ee6dc04cc58c34ac392c80cad507de2cdfa8c02712fe",
+          "dweb:/ipfs/QmeKcaBF8QdJjXiqFrPJkAtK3et5kUL8XJrnHjwhAThRMT"
+        ],
+        "license": null
+      },
+      "node_modules/@ensdomains/ens/contracts/FIFSRegistrar.sol": {
+        "keccak256": "0xee608fdeeea6d7c0e6cb5d69b27a0e6c0658fad024c31ab56d52ccd8c7c0fcd5",
+        "urls": [
+          "bzz-raw://b81fc1330b804af1f0a0cc0cbe00b6c95fffe113c656c2db353893b0e448be9a",
+          "dweb:/ipfs/QmcXnnD4uLw3wxceFhWahicL36kG15t9rnpBhMfem93Uhs"
+        ],
+        "license": null
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "contracts/Imports.sol",
+    "id": 616,
+    "exportedSymbols": {
+      "Imports": [
+        615
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "0:102:2",
+    "nodes": [
+      {
+        "id": 613,
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2",
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".17"
+        ]
+      },
+      {
+        "id": 614,
+        "nodeType": "ImportDirective",
+        "src": "26:53:2",
+        "absolutePath": "node_modules/@ensdomains/ens/contracts/FIFSRegistrar.sol",
+        "file": "@ensdomains/ens/contracts/FIFSRegistrar.sol",
+        "scope": 616,
+        "sourceUnit": 2014,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 615,
+        "nodeType": "ContractDefinition",
+        "src": "81:20:2",
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": null,
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          615
+        ],
+        "name": "Imports",
+        "scope": 616
+      }
+    ]
+  },
+  "id": 2
+}
